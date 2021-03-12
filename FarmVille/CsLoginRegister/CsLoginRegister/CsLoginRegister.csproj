@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{97A0C9DF-488E-4E25-88FF-F9A08CB5CE7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CsLoginRegister</RootNamespace>
+    <AssemblyName>CsLoginRegister</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SLRDbConnector">
+      <HintPath>..\..\..\SLRDbConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adaugaCategorieDaunatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adaugaCategorieDaunatori.Designer.cs">
+      <DependentUpon>adaugaCategorieDaunatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adaugaComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adaugaComanda.Designer.cs">
+      <DependentUpon>adaugaComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adauga_categorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adauga_categorie.Designer.cs">
+      <DependentUpon>Adauga_categorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adauga_daunatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adauga_daunatori.Designer.cs">
+      <DependentUpon>Adauga_daunatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adauga_plante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adauga_plante.Designer.cs">
+      <DependentUpon>Adauga_plante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection\ServerConnection.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCategorie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCategorie.Designer.cs">
+      <DependentUpon>UpdateCategorie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateCategorieDaunator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateCategorieDaunator.Designer.cs">
+      <DependentUpon>updateCategorieDaunator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateComanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateComanda.Designer.cs">
+      <DependentUpon>updateComanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDaunator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDaunator.Designer.cs">
+      <DependentUpon>updateDaunator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePlante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePlante.Designer.cs">
+      <DependentUpon>UpdatePlante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_comenzi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_comenzi.Designer.cs">
+      <DependentUpon>UC_comenzi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_Dashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Dashboard.Designer.cs">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_daunatori.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_daunatori.Designer.cs">
+      <DependentUpon>UC_daunatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_plante.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_plante.Designer.cs">
+      <DependentUpon>UC_plante.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adaugaCategorieDaunatori.resx">
+      <DependentUpon>adaugaCategorieDaunatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adaugaComanda.resx">
+      <DependentUpon>adaugaComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adauga_categorie.resx">
+      <DependentUpon>Adauga_categorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adauga_daunatori.resx">
+      <DependentUpon>Adauga_daunatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adauga_plante.resx">
+      <DependentUpon>Adauga_plante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCategorie.resx">
+      <DependentUpon>UpdateCategorie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateCategorieDaunator.resx">
+      <DependentUpon>updateCategorieDaunator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateComanda.resx">
+      <DependentUpon>updateComanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDaunator.resx">
+      <DependentUpon>updateDaunator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePlante.resx">
+      <DependentUpon>UpdatePlante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_comenzi.resx">
+      <DependentUpon>UC_comenzi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Dashboard.resx">
+      <DependentUpon>UC_Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_daunatori.resx">
+      <DependentUpon>UC_daunatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_plante.resx">
+      <DependentUpon>UC_plante.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
