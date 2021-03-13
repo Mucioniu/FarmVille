@@ -1,2 +1,2 @@
 # FarmVille
-An C# program who can access, store, delete and update data from a database made in MSSQL
+Un program C# care poate accesa, retine, sterge si modifica date dintr-o baza de date in MSSQL
